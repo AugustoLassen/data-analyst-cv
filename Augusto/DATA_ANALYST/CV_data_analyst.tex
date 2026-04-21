@@ -1,0 +1,46 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% https://github.com/darwiin/awesome-neue-latex-cv
+% Author: Christophe Roger (Darwiin)
+% License: CC BY-SA 4.0
+
+\documentclass[localFont, alternative, 10pt, compact]{yaac-another-awesome-cv}
+
+\usepackage{xcolor,luacolor}
+\usepackage{microtype}
+
+% --- Customized hyper-links
+\newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}}
+
+\name{Augusto Eduardo}{Lassen}
+\tagline{PhD in Astrophysics | Data Analyst | Python \& Statistics}
+\photo{3cm}{FIGURES/me_linkedin.jpeg}
+\socialinfo{
+    \linkedin{augusto-lassen-3b560219b}
+    \github{AugustoLassen}\\
+    \smartphone{(+55) 51 997662861}
+    \email{augusto.lassen@gmail.com}
+    \address{Padova, Veneto, Italy}\\
+    \infos{\Colorhref{https://augustolassen.github.io/personal_webpage/}{\textbf{Personal webpage}}}
+}
+%-----
+
+\setleftcolumnlength{2cm}
+
+\begin{document}
+    \makecvheader
+    \makecvfooter
+        {\selectlanguage{english}\textsc{\today}}
+        {\textsc{Augusto E. Lassen --- \textit{Curriculum Vitae}}}
+        {\thepage}
+        
+    \input{section_headline}
+    \input{section_skills}
+    \input{section_experience}
+    \input{section_education}
+    %\input{section_projects}
+    \input{section_publications}
+    \input{section_languages}
+    \input{section_references}
+\end{document}
